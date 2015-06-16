@@ -1,8 +1,7 @@
 $ ->
   words = $.getJSON("spellings.json")
-  $.when(words).done (()->
-    alert("Hello World")
-    return
+  $.when(words).done ((d)->
+    d['words']
   )
 
   $.when(words).fail((data,status,error) ->
