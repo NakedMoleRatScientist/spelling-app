@@ -1,6 +1,11 @@
 $ ->
-
   words = $.getJSON("spellings.json")
-  $.when(words).then (()->
+  $.when(words).done (()->
     alert("Hello World")
+    return
+  )
+
+  $.when(words).fail(() ->
+    alert("FAIL!")
+    return
   )
