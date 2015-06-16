@@ -5,7 +5,7 @@ $ ->
     return
   )
 
-  $.when(words).fail(() ->
-    alert("FAIL!")
+  $.when(words).fail((data,status,error) ->
+    console.log(status + error)
     return
   )
