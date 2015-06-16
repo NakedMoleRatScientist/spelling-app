@@ -2,7 +2,7 @@ $ ->
   $("#question, #answer").hide()
   words = $.getJSON("spellings.json")
   $.when(words).done ((d)->
-    d['words']
+    startUp(d)
   )
 
   $.when(words).fail((data,status,error) ->
