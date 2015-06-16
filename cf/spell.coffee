@@ -1,5 +1,5 @@
 $ ->
-  $("#hint").hide()
+  $("#question").hide()
   words = $.getJSON("spellings.json")
   $.when(words).done ((d)->
     d['words']
@@ -11,4 +11,4 @@ $ ->
   )
 
   startUp = (data) ->
-    $("#hint").show()
+    $("#question").show()
