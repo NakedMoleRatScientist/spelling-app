@@ -1,5 +1,6 @@
 $().ready()
 
-$.getJSON("spellings.json", () ->
-  console.log("Hello World")
+words = $.getJSON("spellings.json")
+$.when(words).then (()->
+  alert("Hello World")
   )
