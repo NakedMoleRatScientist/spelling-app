@@ -8,3 +8,6 @@ $ ->
     console.log(status + error)
     return
   )
+
+  startUp = (data) ->
+    $("#hint").show()
