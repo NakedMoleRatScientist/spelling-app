@@ -1,4 +1,5 @@
 $ ->
+  $("#hint").hide()
   words = $.getJSON("spellings.json")
   $.when(words).done ((d)->
     d['words']
