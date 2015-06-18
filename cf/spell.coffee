@@ -1,4 +1,7 @@
 $ ->
+
+  @current = 0
+
   $("#question, #answer").hide()
   words = $.getJSON("spellings.json")
   $.when(words).done ((d)->
