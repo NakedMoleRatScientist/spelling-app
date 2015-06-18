@@ -17,3 +17,7 @@ $ ->
   random_question = (data) ->
     choice = Math.floor(Math.random() * data['words'].length)
     return data['words'][choice]
+
+  update_question = (data) ->
+    word = random_question(data)
+    $("p#hint").empty().append(word['hint'])
