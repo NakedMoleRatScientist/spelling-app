@@ -12,3 +12,7 @@ $ ->
 
   startUp = (data) ->
     $("#question, #answer").show()
+    random_question(data)
+
+  random_question = (data) ->
+    console.log data['words'].length
