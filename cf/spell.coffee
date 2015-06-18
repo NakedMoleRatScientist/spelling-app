@@ -12,7 +12,7 @@ $ ->
 
   startUp = (data) ->
     $("#question, #answer").show()
-    random_question(data)
+    update_question(data)
 
   random_question = (data) ->
     choice = Math.floor(Math.random() * data['words'].length)
