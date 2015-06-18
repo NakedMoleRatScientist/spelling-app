@@ -15,4 +15,5 @@ $ ->
     random_question(data)
 
   random_question = (data) ->
-    console.log data['words'].length
+    choice = Math.floor(Math.random() * data['words'].length)
+    return data['words'][choice]
