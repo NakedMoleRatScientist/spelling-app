@@ -11,4 +11,4 @@ $ ->
   )
 
   startUp = (data) ->
-    $("#question").show()
+    $("#question, #answer").show()
