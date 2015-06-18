@@ -25,3 +25,8 @@ $ ->
   update_question = (data) ->
     word = random_question(data)
     $("p#hint").empty().append(word['hint'])
+
+  $("#answer").keypress((e) ->
+    if e.which == 13
+      alert("Enter is pressed.")
+  )
