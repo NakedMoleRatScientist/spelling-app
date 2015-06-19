@@ -1,6 +1,6 @@
 $ ->
 
-  @current = 0
+  @current = ""
 
   $("#question, #answer").hide()
   words = $.getJSON("spellings.json")
