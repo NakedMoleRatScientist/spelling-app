@@ -28,5 +28,9 @@ $ ->
 
   $("#answer").keypress((e) ->
     if e.which == 13
-      alert("Enter is pressed.")
+      attempt = $("#input_answer").val()
+      if attempt.toLowerCase() == @choice.toLowerCase()
+        alert("SUCCESS!")
+      else
+        alert("FAIL!")
   )
