@@ -3,7 +3,8 @@
 "words":  [
   {
     "name": "Cheyenne",
-    "hint": "The mountain under which NORAD is located."
+    "hint": "The mountain under which NORAD is located.",
+    "example": "___ is where the fictional SGC is located."
   },
   {
     "name": "Appropriate",
