@@ -1,7 +1,7 @@
 $ ->
 
   @current = ""
-  
+
   $("#question, #answer").hide()
   words = $.getJSON("spellings.json")
   $.when(words).done ((d)->
@@ -25,14 +25,16 @@ $ ->
 
   update_question = (data) ->
     word = random_question(data)
+    $("#input_answer").keydown((e) =>
+      console.log @current
+      )
     $("p#hint").empty().append(word['hint'])
 
-  $("#input_answer").keydown((e) =>
-    console.log this.current
+#  $("#input_answer").keydown((e) =>
+#    console.log this.current
 #    if e.which == 13
 #      attempt = $("#input_answer").val()
 #      if attempt.toLowerCase() == @choice.toLowerCase()
 #        alert("SUCCESS!")
 #      else
 #        alert("FAIL!")
-  )
