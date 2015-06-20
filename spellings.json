@@ -20,6 +20,11 @@
     "name": "Nocturnality",
     "hint": "When an animal's primary activities take place during nighttime.",
     "example": "The owl is known for its ___"
+  },
+  {
+    "name": "Manageable",
+    "hint": "adj. not too difficult or big to attempt.",
+    "example": "You should divide up your project into ___ chunks."
   }
   ]
 }
