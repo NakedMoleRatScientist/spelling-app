@@ -31,10 +31,10 @@ $ ->
 
   update_keyHandler = () ->
     $("#input_answer").keydown((e) =>
-      console.log this.current
+      console.log this.curren
       if e.which == 13
         attempt = $("#input_answer").val()
-        if attempt.toLowerCase() == @choice.toLowerCase()
+        if attempt.toLowerCase() == @current.toLowerCase()
           alert("SUCCESS!")
         else
           alert("FAIL!")
