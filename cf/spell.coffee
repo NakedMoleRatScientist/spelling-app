@@ -27,14 +27,12 @@ $ ->
     word = random_question(data)
     $("p#hint").empty().append(word['hint'])
 
-  $("#input_answer").keydown((e) ->
-    console.log 'beep'
+  $("#input_answer").keydown((e) =>
     console.log this.current
-    if e.which == 13
-      attempt = $("#input_answer").val()
-      if attempt.toLowerCase() == @choice.toLowerCase()
-        alert("SUCCESS!")
-      else
-        alert("FAIL!")
-    )
+#    if e.which == 13
+#      attempt = $("#input_answer").val()
+#      if attempt.toLowerCase() == @choice.toLowerCase()
+#        alert("SUCCESS!")
+#      else
+#        alert("FAIL!")
   )
