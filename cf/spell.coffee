@@ -31,7 +31,6 @@ $ ->
 
   update_keyHandler = () ->
     $("#input_answer").keydown((e) =>
-      console.log this.curren
       if e.which == 13
         attempt = $("#input_answer").val()
         if attempt.toLowerCase() == @current.toLowerCase()
