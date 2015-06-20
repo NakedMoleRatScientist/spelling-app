@@ -20,7 +20,7 @@ $ ->
 
   random_question = (data) ->
     choice = Math.floor(Math.random() * data['words'].length)
-    @current = choice
+    @current = data['words'][choice]['name']
     return data['words'][choice]
 
   update_question = (data) ->
