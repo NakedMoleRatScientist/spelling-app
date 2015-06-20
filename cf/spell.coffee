@@ -25,16 +25,17 @@ $ ->
 
   update_question = (data) ->
     word = random_question(data)
-    $("#input_answer").keydown((e) =>
-      console.log @current
-      )
+    update_keyHandler()
     $("p#hint").empty().append(word['hint'])
 
-#  $("#input_answer").keydown((e) =>
-#    console.log this.current
-#    if e.which == 13
-#      attempt = $("#input_answer").val()
-#      if attempt.toLowerCase() == @choice.toLowerCase()
-#        alert("SUCCESS!")
-#      else
-#        alert("FAIL!")
+
+  update_keyHandler = () ->
+    $("#input_answer").keydown((e) =>
+      console.log this.current
+      if e.which == 13
+        attempt = $("#input_answer").val()
+        if attempt.toLowerCase() == @choice.toLowerCase()
+          alert("SUCCESS!")
+        else
+          alert("FAIL!")
+    )
