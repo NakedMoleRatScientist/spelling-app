@@ -25,6 +25,11 @@
     "name": "Manageable",
     "hint": "adj. not too difficult or big to attempt.",
     "example": "You should divide up your project into ___ chunks."
+  },
+  {
+    "name": "Dichotomy",
+    "hint": "noun. Two things represented as something the opposite or different from each other.",
+    "example": "You're setting up a flase ___ where none exists."
   }
   ]
 }
