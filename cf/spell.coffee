@@ -35,6 +35,7 @@ $ ->
         attempt = $("#input_answer").val()
         if attempt.toLowerCase() == @current.toLowerCase()
           alert("SUCCESS!")
+          update_question(@data)
         else
           alert("FAIL!")
     )
