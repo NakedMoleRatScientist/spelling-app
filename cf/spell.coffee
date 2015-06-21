@@ -30,6 +30,7 @@ $ ->
 
 
   update_keyHandler = () ->
+    $("#input_answer").off()
     $("#input_answer").keydown((e) =>
       if e.which == 13
         attempt = $("#input_answer").val()
