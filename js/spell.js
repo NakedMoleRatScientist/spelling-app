@@ -29,13 +29,15 @@
       return $("p#hint").empty().append(word['hint']);
     };
     return update_keyHandler = function() {
+      $("#input_answer").off();
       return $("#input_answer").keydown((function(_this) {
         return function(e) {
           var attempt;
           if (e.which === 13) {
             attempt = $("#input_answer").val();
             if (attempt.toLowerCase() === _this.current.toLowerCase()) {
-              return alert("SUCCESS!");
+              alert("SUCCESS!");
+              return update_question(_this.data);
             } else {
               return alert("FAIL!");
             }
