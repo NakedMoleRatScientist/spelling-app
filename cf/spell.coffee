@@ -26,7 +26,7 @@ $ ->
   update_question = (data) ->
     word = random_question(data)
     update_keyHandler()
-    $("p#hint_define").empty().append(word['hint_define'])
+    $("p#hint_define").empty().append(word['hint'])
 
 
   update_keyHandler = () ->
