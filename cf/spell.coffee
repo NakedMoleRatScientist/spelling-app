@@ -40,5 +40,6 @@ $ ->
           alert("SUCCESS!")
           update_question(@data)
         else
+          @fail += 1
           alert("FAIL!")
     )
