@@ -3,6 +3,7 @@
   $(function() {
     var random_question, startUp, update_keyHandler, update_question, words;
     this.current = "";
+    this.fail = 0;
     $("#question, #answer").hide();
     words = $.getJSON("spellings.json");
     $.when(words).done((function(d) {
@@ -26,7 +27,8 @@
       var word;
       word = random_question(data);
       update_keyHandler();
-      return $("p#hint").empty().append(word['hint']);
+      $("p#hint_define").empty().append(word['hint']);
+      return $("p#hint_sentence").empty().append(word['example']);
     };
     return update_keyHandler = function() {
       $("#input_answer").off();
@@ -39,6 +41,7 @@
               alert("SUCCESS!");
               return update_question(_this.data);
             } else {
+              _this.fail += 1;
               return alert("FAIL!");
             }
           }
