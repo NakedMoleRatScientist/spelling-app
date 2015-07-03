@@ -2,8 +2,6 @@
 (function() {
   $(function() {
     var random_question, startUp, update_keyHandler, update_question, words;
-    this.current = "";
-    this.fail = 0;
     $("#question, #answer").hide();
     words = $.getJSON("spellings.json");
     $.when(words).done((function(d) {
@@ -15,7 +13,9 @@
     startUp = function(data) {
       $("#question, #answer").show();
       update_question(data);
-      return this.data = data;
+      this.data = data;
+      this.current = "";
+      return this.fail = 0;
     };
     random_question = function(data) {
       var choice;
@@ -42,7 +42,9 @@
               return update_question(_this.data);
             } else {
               _this.fail += 1;
-              return alert("FAIL!");
+              $(".alert").addClass("alert-danger");
+              $(".alert").append("You have failed " + _this.fail);
+              return $("input#input_answer").val("");
             }
           }
         };
