@@ -37,9 +37,14 @@
     "example": "My ___ for the game runs low."
   },
   {
-    "name": "peculiar",
+    "name": "Peculiar",
     "hint": "adj. odd",
     "example": "A ___ man came in town driving a clown car."
+  },
+  {
+    "name": "Explanation",
+    "hint": "noun. The reason the way or how something is",
+    "example": "The ___ for how car engines work is unclear."
   }
   ]
 }
