@@ -35,6 +35,11 @@
     "name": "Enthusiasm",
     "hint": "noun. Enjoyment and interest in a given subject.",
     "example": "My ___ for the game runs low."
+  },
+  {
+    "name": "peculiar",
+    "hint": "adj. odd",
+    "example": "A ___ man came in town driving a clown car."
   }
   ]
 }
