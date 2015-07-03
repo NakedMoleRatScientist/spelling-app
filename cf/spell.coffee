@@ -1,8 +1,5 @@
 $ ->
 
-  @current = ""
-  @fail = 0
-
   $("#question, #answer").hide()
   words = $.getJSON("spellings.json")
   $.when(words).done ((d)->
@@ -18,6 +15,8 @@ $ ->
     $("#question, #answer").show()
     update_question(data)
     @data = data
+    @current = ""
+    @fail = 0
 
   random_question = (data) ->
     choice = Math.floor(Math.random() * data['words'].length)
