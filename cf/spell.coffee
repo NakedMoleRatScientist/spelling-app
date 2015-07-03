@@ -41,5 +41,6 @@ $ ->
           update_question(@data)
         else
           @fail += 1
+          $(".alert").addClass("alert-danger")
           $("input#input_answer").val("")
     )
