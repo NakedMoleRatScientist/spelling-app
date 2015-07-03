@@ -41,4 +41,5 @@ $ ->
           update_question(@data)
         else
           @fail += 1
-          $("input#input_answer").val("")    )
+          $("input#input_answer").val("")
+    )
