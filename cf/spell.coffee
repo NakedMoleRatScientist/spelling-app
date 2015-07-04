@@ -29,6 +29,8 @@ $ ->
     $("p#hint_define").empty().append(word['hint'])
     $("p#hint_sentence").empty().append(word['example'])
 
+  emptyInput = () ->
+    $("input#input_answer").val("")
 
   update_keyHandler = () ->
     $("#input_answer").off()
@@ -46,5 +48,5 @@ $ ->
           else
             last = " time."
           $(".alert").empty().append("You have failed " + @fail + last)
-          $("input#input_answer").val("")
-    )
+          emptyInput()
+      )
