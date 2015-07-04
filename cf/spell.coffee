@@ -38,7 +38,7 @@ $ ->
       if e.which == 13
         attempt = $("#input_answer").val()
         if attempt.toLowerCase() == @current.toLowerCase()
-          alert("SUCCESS!")
+          $(".alert").addClass("alert-success")
           update_question(@data)
           emptyInput()
         else
