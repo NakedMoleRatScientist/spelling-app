@@ -40,6 +40,7 @@ $ ->
         if attempt.toLowerCase() == @current.toLowerCase()
           alert("SUCCESS!")
           update_question(@data)
+          emptyInput()
         else
           @fail += 1
           $(".alert").addClass("alert-danger")
