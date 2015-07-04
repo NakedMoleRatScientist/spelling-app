@@ -45,6 +45,6 @@ $ ->
             last = " times."
           else
             last = " time."
-          $(".alert").empty().append("You have failed " + @fail + " time.")
+          $(".alert").empty().append("You have failed " + @fail + last)
           $("input#input_answer").val("")
     )
