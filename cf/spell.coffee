@@ -13,10 +13,10 @@ $ ->
 
   startUp = (data) ->
     $("#question, #answer").show()
-    update_question(data)
-    @data = data
     @current = ""
     @fail = 0
+    update_question(data)
+    @data = data
 
   random_question = (data) ->
     choice = Math.floor(Math.random() * data['words'].length)
