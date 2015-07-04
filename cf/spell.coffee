@@ -41,6 +41,6 @@ $ ->
         else
           @fail += 1
           $(".alert").addClass("alert-danger")
-          $(".alert").append("You have failed " + @fail)
+          $(".alert").empty().append("You have failed " + @fail)
           $("input#input_answer").val("")
     )
