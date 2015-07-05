@@ -60,6 +60,8 @@ $ ->
             last = " times."
           else
             last = " time."
+          if @fail % 2 == 0
+            revealLetter()
           $(".alert").empty().append("You have failed " + @fail + last)
           emptyInput()
       )
