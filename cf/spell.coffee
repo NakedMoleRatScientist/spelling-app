@@ -34,6 +34,9 @@ $ ->
   emptyInput = () ->
     $("input#input_answer").val("")
 
+  revealLetter = () ->
+    i = randomLetter()
+    
   update_keyHandler = () ->
     $("#input_answer").off()
     $("#input_answer").keydown((e) =>
