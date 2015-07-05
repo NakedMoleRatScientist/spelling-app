@@ -39,6 +39,7 @@ $ ->
         attempt = $("#input_answer").val()
         if attempt.toLowerCase() == @current.toLowerCase()
           $(".alert").addClass("alert-success")
+          $(".alert").empty().append("You had just spelt the word " + @current + " right!")
           update_question(@data)
           emptyInput()
         else
