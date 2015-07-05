@@ -24,11 +24,13 @@
       return data['words'][choice];
     };
     update_question = function(data) {
-      var word;
-      word = random_question(data);
+      var entry, size;
+      entry = random_question(data);
       update_keyHandler();
-      $("p#hint_define").empty().append(word['hint']);
-      return $("p#hint_sentence").empty().append(word['example']);
+      size = entry.name.length;
+      $("dd#hint_stat").empty().append("This word is " + size + " long.");
+      $("dd#hint_define").empty().append(entry['hint']);
+      return $("dd#hint_sentence").empty().append(entry['example']);
     };
     emptyInput = function() {
       return $("input#input_answer").val("");
@@ -42,6 +44,7 @@
             attempt = $("#input_answer").val();
             if (attempt.toLowerCase() === _this.current.toLowerCase()) {
               $(".alert").addClass("alert-success");
+              $(".alert").empty().append("You had just spelt the word " + _this.current + " right!");
               update_question(_this.data);
               return emptyInput();
             } else {
