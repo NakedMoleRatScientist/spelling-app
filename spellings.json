@@ -50,6 +50,11 @@
     "name": "Catastrophic",
     "hint": "adj. extreme failure",
     "example": "Even a tiny flaw in a rocket can result in a ___ event known as Rapid Unplanned Diassembly."
+  },
+  {
+    "name": "Laboratory",
+    "hint": "n. a facility designed for scientific and techological research.",
+    "example": "In Dexter's __, a child prodigy hid a ___ from his parents. "
   }
   ]
 }
