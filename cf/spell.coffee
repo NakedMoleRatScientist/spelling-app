@@ -24,12 +24,12 @@ $ ->
     return data['words'][choice]
 
   update_question = (data) ->
-    word = random_question(data)
+    entry = random_question(data)
     update_keyHandler()
-    size = word.name.length
+    size = entry.name.length
     $("dd#hint_stat").empty().append("This word is " + size + " long.")
-    $("dd#hint_define").empty().append(word['hint'])
-    $("dd#hint_sentence").empty().append(word['example'])
+    $("dd#hint_define").empty().append(entry['hint'])
+    $("dd#hint_sentence").empty().append(entry['example'])
 
   emptyInput = () ->
     $("input#input_answer").val("")
