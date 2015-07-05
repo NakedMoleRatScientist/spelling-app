@@ -26,8 +26,8 @@ $ ->
   update_question = (data) ->
     word = random_question(data)
     update_keyHandler()
-    $("p#hint_define").empty().append(word['hint'])
-    $("p#hint_sentence").empty().append(word['example'])
+    $("dd#hint_define").empty().append(word['hint'])
+    $("dd#hint_sentence").empty().append(word['example'])
 
   emptyInput = () ->
     $("input#input_answer").val("")
