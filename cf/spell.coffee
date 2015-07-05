@@ -15,6 +15,7 @@ $ ->
     $("#question, #answer").show()
     @current = ""
     @fail = 0
+    @reveal
     update_question(data)
     @data = data
 
@@ -36,6 +37,7 @@ $ ->
 
   randomLetter = () ->
     n = Math.floor(Math.random * @current.length)
+
   revealLetter = () ->
     i = randomLetter()
 
