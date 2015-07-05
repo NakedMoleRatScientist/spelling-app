@@ -15,7 +15,7 @@ $ ->
     $("#question, #answer").show()
     @current = ""
     @fail = 0
-    @reveal
+    @reveal = ""
     update_question(data)
     @data = data
 
