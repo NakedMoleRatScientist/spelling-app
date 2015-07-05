@@ -22,6 +22,8 @@ $ ->
   random_question = (data) ->
     choice = Math.floor(Math.random() * data['words'].length)
     @current = data['words'][choice]['name']
+    [1..@current.length].forEach ->
+      @reveal.concat("_")
     return data['words'][choice]
 
   update_question = (data) ->
