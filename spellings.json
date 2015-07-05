@@ -45,6 +45,11 @@
     "name": "Explanation",
     "hint": "noun. The reason the way or how something is",
     "example": "The ___ for how car engines work is unclear."
+  },
+  {
+    "name": "Catastrophic",
+    "hint": "adj. extreme failure",
+    "example" "Even a tiny flaw in a rocket can result in a ___ event known as Rapid Unplanned Diassembly."
   }
   ]
 }
