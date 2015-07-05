@@ -38,7 +38,13 @@ $ ->
     $("input#input_answer").val("")
 
   randomLetter = () ->
+    if @reveal == @current
+      return
     n = Math.floor(Math.random * @current.length)
+    if @reveal[n] == "_"
+      @reveal[n] = @current[n]
+    else
+      randomLetter()
 
   revealLetter = () ->
     i = randomLetter()
