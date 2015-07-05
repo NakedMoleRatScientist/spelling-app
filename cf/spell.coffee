@@ -26,6 +26,7 @@ $ ->
   update_question = (data) ->
     word = random_question(data)
     update_keyHandler()
+    size = word.length
     $("dd#hint_define").empty().append(word['hint'])
     $("dd#hint_sentence").empty().append(word['example'])
 
