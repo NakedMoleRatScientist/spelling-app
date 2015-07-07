@@ -65,6 +65,11 @@
     "name": "Hygiene",
     "hint": "n. health condition and set of practices for maintaining one's health.",
     "example": "American high school started too early, reducing the overall sleep ___ of the population, and thus resulting in lower performance."
+  },
+  {
+    "name": "Surpressive fire",
+    "hint": "n. The concept of temporarily rendering an enemy ineffective with the use of weaponry so that they can be eliminated more easily.",
+    "example": "In ground warfare, most of weapon fire is geared toward ___ rather than outright taking out the target."
   }
   ]
 }
