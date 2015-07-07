@@ -45,7 +45,7 @@ $ ->
     while breaking < 500
       breaking += 1
       if @reveal[n] == "_"
-        @reveal[n] = @current[n]
+        @reveal = @reveal.substring(0,n) + @current[n] + @reveal.substring(n + 1)
         return
 
   update_keyHandler = () ->
