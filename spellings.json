@@ -60,6 +60,11 @@
     "name": "Nitinol",
     "hint": "n. an alloy of titanium and nickel.",
     "example": "Four applications for the alloy ___ includes 'Superelasticity', 'work production', 'constrained recovery', and 'free recovery'."
+  },
+  {
+    "name": "Hygiene",
+    "hint": "n. health condition and set of practices for maintaining one's health.",
+    "example": "American high school started too early, reducing the overall sleep ___ of the population, and thus resulting in lower performance."
   }
   ]
 }
