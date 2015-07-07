@@ -16,7 +16,7 @@ $ ->
     @current = ""
     @fail = 0
     @reveal = ""
-    @finished = []
+    @unfinished = []
     update_question(data)
     @data = data
 
