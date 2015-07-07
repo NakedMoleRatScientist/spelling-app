@@ -25,6 +25,7 @@ $ ->
     @current = data['words'][choice]['name']
     [1..@current.length].forEach ->
       @reveal = @reveal.concat("_")
+    @unfinished = [1..@current.length - 1]
     return data['words'][choice]
 
   update_question = (data) ->
