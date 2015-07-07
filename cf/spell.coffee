@@ -40,8 +40,10 @@ $ ->
   randomLetter = () ->
     if @reveal == @current
       return
-    loop do
-      n = Math.floor(Math.random() * @current.length)
+    breaking = 0
+    n = Math.floor(Math.random() * @current.length)
+    while breaking < 500
+      breaking += 1
       if @reveal[n] == "_"
         @reveal[n] = @current[n]
         return
