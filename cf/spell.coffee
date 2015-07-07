@@ -69,6 +69,7 @@ $ ->
             last = " time."
           if @fail % 2 == 0
             randomLetter()
+            $("#revealed").empty().append(@reveal)
           $(".alert").empty().append("You have failed " + @fail + last)
           emptyInput()
       )
