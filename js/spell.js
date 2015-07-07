@@ -15,11 +15,12 @@
       this.current = "";
       this.fail = 0;
       this.reveal = "";
+      this.unfinished = [];
       update_question(data);
       return this.data = data;
     };
     random_question = function(data) {
-      var choice, i, ref, results;
+      var choice, i, j, ref, ref1, results, results1;
       choice = Math.floor(Math.random() * data['words'].length);
       this.current = data['words'][choice]['name'];
       (function() {
@@ -29,6 +30,11 @@
       }).apply(this).forEach(function() {
         return this.reveal = this.reveal.concat("_");
       });
+      this.unfinished = (function() {
+        results1 = [];
+        for (var j = 1, ref1 = this.current.length - 1; 1 <= ref1 ? j <= ref1 : j >= ref1; 1 <= ref1 ? j++ : j--){ results1.push(j); }
+        return results1;
+      }).apply(this);
       return data['words'][choice];
     };
     update_question = function(data) {
@@ -44,16 +50,11 @@
       return $("input#input_answer").val("");
     };
     randomLetter = function() {
-      var breaking, i, n, positions, ref, results;
+      var breaking, n;
       if (this.reveal === this.current) {
         return;
       }
       breaking = 0;
-      positions = (function() {
-        results = [];
-        for (var i = 1, ref = this.current.length - 1; 1 <= ref ? i <= ref : i >= ref; 1 <= ref ? i++ : i--){ results.push(i); }
-        return results;
-      }).apply(this);
       while (breaking < 500) {
         breaking += 1;
         n = Math.floor(Math.random() * this.current.length);
@@ -83,9 +84,8 @@
               } else {
                 last = " time.";
               }
-              if (_this.fail % 2 === 0) {
-                randomLetter();
-              }
+              randomLetter();
+              $("#revealed").empty().append(_this.reveal);
               $(".alert").empty().append("You have failed " + _this.fail + last);
               return emptyInput();
             }
