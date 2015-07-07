@@ -41,9 +41,9 @@ $ ->
     if @reveal == @current
       return
     breaking = 0
-    n = Math.floor(Math.random() * @current.length)
     while breaking < 500
       breaking += 1
+      n = Math.floor(Math.random() * @current.length)      
       if @reveal[n] == "_"
         @reveal = @reveal.substring(0,n) + @current[n] + @reveal.substring(n + 1)
         return
