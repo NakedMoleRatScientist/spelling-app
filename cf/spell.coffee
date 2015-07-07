@@ -43,7 +43,7 @@ $ ->
     n = Math.floor(Math.random * @current.length)
     if @reveal[n] == "_"
       @reveal[n] = @current[n]
-      return 
+      return
 
   update_keyHandler = () ->
     $("#input_answer").off()
@@ -63,7 +63,7 @@ $ ->
           else
             last = " time."
           if @fail % 2 == 0
-            revealLetter()
+            randomLetter()
           $(".alert").empty().append("You have failed " + @fail + last)
           emptyInput()
       )
