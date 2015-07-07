@@ -40,10 +40,11 @@ $ ->
   randomLetter = () ->
     if @reveal == @current
       return
-    n = Math.floor(Math.random * @current.length)
-    if @reveal[n] == "_"
-      @reveal[n] = @current[n]
-      return
+    loop do
+      n = Math.floor(Math.random() * @current.length)
+      if @reveal[n] == "_"
+        @reveal[n] = @current[n]
+        return
 
   update_keyHandler = () ->
     $("#input_answer").off()
