@@ -55,6 +55,11 @@
     "name": "Laboratory",
     "hint": "n. a facility designed for scientific and techological research.",
     "example": "In Dexter's __, a child prodigy hid a ___ from his parents. "
+  },
+  {
+    "name": "Nitinol",
+    "hint": "n. an alloy of titanium and nickel.",
+    "example": "Four applications for the alloy ___ includes 'Superelasticity', 'work production', 'constrained recovery', and 'free recovery'."
   }
   ]
 }
