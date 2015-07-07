@@ -43,7 +43,6 @@ $ ->
     if @reveal == @current
       return
     breaking = 0
-    positions = [1..@current.length - 1]
     while breaking < 500
       breaking += 1
       n = Math.floor(Math.random() * @current.length)
