@@ -43,11 +43,7 @@ $ ->
     n = Math.floor(Math.random * @current.length)
     if @reveal[n] == "_"
       @reveal[n] = @current[n]
-    else
-      randomLetter()
-
-  revealLetter = () ->
-    i = randomLetter()
+      return 
 
   update_keyHandler = () ->
     $("#input_answer").off()
