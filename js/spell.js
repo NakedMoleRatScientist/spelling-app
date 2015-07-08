@@ -32,17 +32,22 @@
       });
       this.unfinished = (function() {
         results1 = [];
-        for (var j = 1, ref1 = this.current.length - 1; 1 <= ref1 ? j <= ref1 : j >= ref1; 1 <= ref1 ? j++ : j--){ results1.push(j); }
+        for (var j = 0, ref1 = this.current.length - 1; 0 <= ref1 ? j <= ref1 : j >= ref1; 0 <= ref1 ? j++ : j--){ results1.push(j); }
         return results1;
       }).apply(this);
       return data['words'][choice];
     };
     update_question = function(data) {
-      var entry, size;
+      var entry, i, len, size, word;
       entry = random_question(data);
       update_keyHandler();
-      size = entry.name.length;
-      $("dd#hint_stat").empty().append("This word is " + size + " letters long.");
+      words = entry.name.split(" ").length;
+      size = 0;
+      for (i = 0, len = words.length; i < len; i++) {
+        word = words[i];
+        size += word.length;
+      }
+      $("dd#hint_stat").empty().append("This entry is " + size + " letters long.");
       $("dd#hint_define").empty().append(entry['hint']);
       return $("dd#hint_sentence").empty().append(entry['example']);
     };
@@ -50,19 +55,14 @@
       return $("input#input_answer").val("");
     };
     randomLetter = function() {
-      var breaking, n;
+      var decide, n;
       if (this.reveal === this.current) {
         return;
       }
-      breaking = 0;
-      while (breaking < 500) {
-        breaking += 1;
-        n = Math.floor(Math.random() * this.current.length);
-        if (this.reveal[n] === "_") {
-          this.reveal = this.reveal.substring(0, n) + this.current[n] + this.reveal.substring(n + 1);
-          return;
-        }
-      }
+      decide = Math.floor(Math.random() * this.unfinished.length);
+      n = this.unfinished[decide];
+      this.reveal = this.reveal.substring(0, n) + this.current[n] + this.reveal.substring(n + 1);
+      return this.unfinished.splice(decide, 1);
     };
     return update_keyHandler = function() {
       $("#input_answer").off();
@@ -74,6 +74,8 @@
             if (attempt.toLowerCase() === _this.current.toLowerCase()) {
               $(".alert").addClass("alert-success");
               $(".alert").empty().append("You had just spelt the word " + _this.current + " right!");
+              $("#revealed").empty();
+              _this.reveal = "";
               update_question(_this.data);
               return emptyInput();
             } else {
