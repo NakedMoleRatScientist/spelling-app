@@ -42,14 +42,11 @@ $ ->
   randomLetter = () ->
     if @reveal == @current
       return
-    breaking = 0
-    while breaking < 500
-      breaking += 1
-      n = Math.floor(Math.random() * @current.length)
-      if @reveal[n] == "_"
-        @reveal = @reveal.substring(0,n) + @current[n] + @reveal.substring(n + 1)
-        return
-
+    decide = Math.floor(Math.random() * @unfinished.length)
+    n = @unfinished[decide]
+    @reveal = @reveal.substring(0,n) + @current[n] + @reveal.substring(n + 1)
+    @unfinished.splice(decide,1)
+    
   update_keyHandler = () ->
     $("#input_answer").off()
     $("#input_answer").keydown((e) =>
