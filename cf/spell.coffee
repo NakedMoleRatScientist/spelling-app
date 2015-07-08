@@ -56,6 +56,7 @@ $ ->
           $(".alert").addClass("alert-success")
           $(".alert").empty().append("You had just spelt the word " + @current + " right!")
           $("#revealed").empty()
+          @reveal = ""
           update_question(@data)
           emptyInput()
         else
