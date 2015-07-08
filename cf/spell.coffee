@@ -35,7 +35,7 @@ $ ->
     size = 0
     for word in words
       size += word.length
-    $("dd#hint_stat").empty().append("This word is " + size + " letters long.")
+    $("dd#hint_stat").empty().append("This entry is " + size + " letters long.")
     $("dd#hint_define").empty().append(entry['hint'])
     $("dd#hint_sentence").empty().append(entry['example'])
 
