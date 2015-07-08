@@ -25,7 +25,7 @@ $ ->
     @current = data['words'][choice]['name']
     [1..@current.length].forEach ->
       @reveal = @reveal.concat("_")
-    @unfinished = [1..@current.length - 1]
+    @unfinished = [0..@current.length - 1]
     return data['words'][choice]
 
   update_question = (data) ->
@@ -46,7 +46,7 @@ $ ->
     n = @unfinished[decide]
     @reveal = @reveal.substring(0,n) + @current[n] + @reveal.substring(n + 1)
     @unfinished.splice(decide,1)
-    
+
   update_keyHandler = () ->
     $("#input_answer").off()
     $("#input_answer").keydown((e) =>
