@@ -30,8 +30,8 @@ $ ->
 
   update_question = (data) ->
     entry = random_question(data)
-    update_keyHandler()    
-    word_count = entry.name.split(" ").length
+    update_keyHandler()
+    words = entry.name.split(" ").length
     size = entry.name.length
     $("dd#hint_stat").empty().append("This word is " + size + " letters long.")
     $("dd#hint_define").empty().append(entry['hint'])
