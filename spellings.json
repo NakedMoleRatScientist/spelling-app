@@ -75,6 +75,11 @@
     "name": "Substantially",
     "hint": "adverb. In great amount, important, as opposed to minor or only slightly.",
     "example": "In the last ten years, nobody had advanced spaceflight as much as SpaceX."
+  },
+  {
+    "name": "Preliminary",
+    "hint": "adjective. An initial action that prepare for something larger.",
+    "example": "A ___ investigation has been conducted, but revealed nothing yet. More investigation and time is needed."
   }
   ]
 }
