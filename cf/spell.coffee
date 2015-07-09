@@ -31,7 +31,7 @@ $ ->
   update_question = (data) ->
     entry = random_question(data)
     update_keyHandler()
-    words = entry.name.split(" ").length
+    words = entry.name.split(" ")
     size = 0
     for word in words
       size += word.length
