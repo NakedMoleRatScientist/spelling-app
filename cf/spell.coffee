@@ -1,5 +1,9 @@
 $ ->
 
+  initializeSessionStorage = () ->
+    if localStorage.getItem("created_at") == null
+      localStorage.setItem("created_at", new Date())
+
   $("#question, #answer").hide()
   words = $.getJSON("spellings.json")
   $.when(words).done ((d)->
