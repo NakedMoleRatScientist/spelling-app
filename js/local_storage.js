@@ -3,7 +3,11 @@
   var LocalStorage;
 
   LocalStorage = (function() {
-    function LocalStorage() {}
+    function LocalStorage() {
+      if (localStorage.getItem("created_at") === null) {
+        localStorage.setItem("created_at", new Date());
+      }
+    }
 
     return LocalStorage;
 
