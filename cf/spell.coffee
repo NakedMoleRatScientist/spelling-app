@@ -1,7 +1,6 @@
 $ ->
 
-  initializeLocalStorage = () ->
-
+  @storage = new LocalStorage()
   $("#question, #answer").hide()
   words = $.getJSON("spellings.json")
   $.when(words).done ((d)->
@@ -14,7 +13,6 @@ $ ->
   )
 
   startUp = (data) ->
-    initializeLocalStorage()
     $("#question, #answer").show()
     @current = ""
     @fail = 0
