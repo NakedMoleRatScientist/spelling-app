@@ -1,6 +1,6 @@
 $ ->
 
-  initializeSessionStorage = () ->
+  initializeLocalStorage = () ->
     if localStorage.getItem("created_at") == null
       localStorage.setItem("created_at", new Date())
 
@@ -16,7 +16,7 @@ $ ->
   )
 
   startUp = (data) ->
-    initializeSessionStorage()
+    initializeLocalStorage()
     $("#question, #answer").show()
     @current = ""
     @fail = 0
