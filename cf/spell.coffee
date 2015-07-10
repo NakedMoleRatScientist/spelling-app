@@ -16,6 +16,7 @@ $ ->
   )
 
   startUp = (data) ->
+    initializeSessionStorage()
     $("#question, #answer").show()
     @current = ""
     @fail = 0
