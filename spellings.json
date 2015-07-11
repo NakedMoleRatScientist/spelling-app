@@ -95,6 +95,11 @@
     "name": "Intricacy",
     "hint": "n. Highly detailed, complicated.",
     "example": "If you dive deep enough into a subject, you will find that the ___ of the subject keeps getting deeper."
+  },
+  {
+    "name": "Pragmatic",
+    "hint": "adj. Realistic. Goal driven.",
+    "example": "The congresscritters these days are less hard-nosed and ___ these days, unwilling to compromise and more willing to stand up for their ideology."
   }
   ]
 }
