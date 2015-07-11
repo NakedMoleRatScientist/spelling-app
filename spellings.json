@@ -85,6 +85,11 @@
     "name": "Obsolescence",
     "hint": "n. The eventual condition of becoming unwanted, useless, or unnecessary.",
     "example": "Some people alleged that manufacturers conspire in a process called planned ___ to keep us buying new goods."
+  },
+  {
+    "name": "Logarithm",
+    "hint": "n. The power needed to raise a number exponentionally to produce a third number.",
+    "example": "The ___ of 100 is 2."
   }
   ]
 }
