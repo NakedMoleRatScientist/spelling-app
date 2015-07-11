@@ -100,6 +100,11 @@
     "name": "Pragmatic",
     "hint": "adj. Realistic. Goal driven.",
     "example": "The congresscritters these days are less hard-nosed and ___ these days, unwilling to compromise and more willing to stand up for their ideology."
+  },
+  {
+    "name": "Spurious",
+    "hint": "adj. Not actually true or fake.",
+    "example": "Those claims are ___ and false."
   }
   ]
 }
