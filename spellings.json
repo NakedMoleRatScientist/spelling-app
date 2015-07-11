@@ -90,6 +90,11 @@
     "name": "Logarithm",
     "hint": "n. The power needed to raise a number exponentionally to produce a third number.",
     "example": "The ___ of 100 is 2."
+  },
+  {
+    "name": "Intricacy",
+    "hint": "n. Highly detailed, complicated.",
+    "example": "If you dive deep enough into a subject, you will find that the ___ keeps getting deeper."
   }
   ]
 }
