@@ -2,7 +2,6 @@
 (function() {
   $(function() {
     var emptyInput, randomLetter, random_question, startUp, update_keyHandler, update_question, words;
-    this.storage = new LocalStorage();
     $("#question, #answer").hide();
     words = $.getJSON("spellings.json");
     $.when(words).done((function(d) {
@@ -12,7 +11,12 @@
       console.log(status + error);
     });
     startUp = function(data) {
+      var comparison, today;
       $("#question, #answer").show();
+      this.storage = new LocalStorage();
+      today = new Date();
+      comparison = today - this.storage.created_at;
+      $("#created_at").append(moment.duration(comparison).days());
       this.current = "";
       this.fail = 0;
       this.reveal = "";
@@ -53,8 +57,9 @@
       } else {
         last = "word";
       }
+      $("#revealed").empty().append(this.reveal);
       $("dd#hint_stat").empty().append("This entry is <b>" + size + " letters</b> long and <b>" + words.length + " " + last + "</b> long.");
-      $("dd#hint_define").empty().append(entry['hint']);
+      $("dd#hint_define").empty().append(entry['definition']);
       return $("dd#hint_sentence").empty().append(entry['example']);
     };
     emptyInput = function() {
