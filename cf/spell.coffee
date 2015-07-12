@@ -16,7 +16,7 @@ $ ->
     @storage = new LocalStorage()
     today = new Date()
     comparison = today - @storage.created_at
-    $("#created_at").append(@storage.created_at)
+    $("#created_at").append(moment.duration(comparison).days)
     @current = ""
     @fail = 0
     @reveal = ""
