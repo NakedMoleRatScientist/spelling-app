@@ -14,6 +14,7 @@ $ ->
 
   startUp = (data) ->
     $("#question, #answer").show()
+    $("#created_at").append(@storage.created_at)
     @current = ""
     @fail = 0
     @reveal = ""
