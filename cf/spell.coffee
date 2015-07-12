@@ -41,7 +41,7 @@ $ ->
     else
       last = "word"
     $("dd#hint_stat").empty().append("This entry is <b>" + size + " letters</b> long and <b>" + words.length + " " + last + "</b> long.")
-    $("dd#hint_define").empty().append(entry['hint'])
+    $("dd#hint_define").empty().append(entry['definition'])
     $("dd#hint_sentence").empty().append(entry['example'])
 
   emptyInput = () ->
