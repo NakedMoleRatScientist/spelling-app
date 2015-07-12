@@ -39,7 +39,7 @@
       return data['words'][choice];
     };
     update_question = function(data) {
-      var entry, i, len, size, word;
+      var entry, i, last, len, size, word;
       entry = random_question(data);
       update_keyHandler();
       words = entry.name.split(" ");
@@ -48,7 +48,12 @@
         word = words[i];
         size += word.length;
       }
-      $("dd#hint_stat").empty().append("This entry is <b>" + size + " letters</b> long. It is also <b>" + words.length + " word(s)</b> long.");
+      if (words.length > 1) {
+        last = "words";
+      } else {
+        last = "word";
+      }
+      $("dd#hint_stat").empty().append("This entry is <b>" + size + " letters</b> long and <b>" + words.length + " " + last + "</b> long.");
       $("dd#hint_define").empty().append(entry['hint']);
       return $("dd#hint_sentence").empty().append(entry['example']);
     };
@@ -74,7 +79,7 @@
             attempt = $("#input_answer").val();
             if (attempt.toLowerCase() === _this.current.toLowerCase()) {
               $(".alert").addClass("alert-success");
-              $(".alert").empty().append("You had just spelt the word <b>" + _this.current + "</b> right!");
+              $(".alert").empty().append("You had just spelled the word <b>" + _this.current + "</b> right!");
               $("#revealed").empty();
               _this.reveal = "";
               update_question(_this.data);
