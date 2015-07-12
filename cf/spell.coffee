@@ -58,7 +58,7 @@ $ ->
         attempt = $("#input_answer").val()
         if attempt.toLowerCase() == @current.toLowerCase()
           $(".alert").addClass("alert-success")
-          $(".alert").empty().append("You had just spelt the word <b>" + @current + "</b> right!")
+          $(".alert").empty().append("You had just spelled the word <b>" + @current + "</b> right!")
           $("#revealed").empty()
           @reveal = ""
           update_question(@data)
