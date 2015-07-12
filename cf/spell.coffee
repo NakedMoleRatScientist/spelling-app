@@ -14,6 +14,8 @@ $ ->
   startUp = (data) ->
     $("#question, #answer").show()
     @storage = new LocalStorage()
+    today = new Date()
+    comparison = today - @storage.created_at
     $("#created_at").append(@storage.created_at)
     @current = ""
     @fail = 0
