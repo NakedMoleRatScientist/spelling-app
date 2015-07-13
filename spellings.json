@@ -120,6 +120,11 @@
     "name": "Dyslexia",
     "definition": "n. A type of learning disorder associated with reading and writing.",
     "example": "If you can't spell, it may be because you have ___"
+  },
+  {
+    "name": "Penchant",
+    "definition": "n. A fondness and habit to do something.",
+    "example": "That woman has a ___ to randomly bake cookies for someone."
   }
   ]
 }
