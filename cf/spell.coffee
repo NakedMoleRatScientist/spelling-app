@@ -15,8 +15,9 @@ $ ->
     $("#question, #answer").show()
     @storage = new LocalStorage()
     today = new Date()
-    comparison = today - @storage.created_at
-    $("#created_at").append(moment.duration(comparison).days)
+    comparison = today - Date.parse(@storage.created_at)
+    days_ago = moment.duration(comparison).days()
+    $("#created_at").append(days_ago)
     @current = ""
     @fail = 0
     @reveal = ""
