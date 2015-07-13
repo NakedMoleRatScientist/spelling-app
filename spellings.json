@@ -115,6 +115,11 @@
     "name": "Architecture",
     "definition": "n. The designs of buildings.",
     "example": "The Sydney Opera House is a fine example of architecture."
+  },
+  {
+    "name": "Dyslexia",
+    "definition": "n. A type of learning disorder associated with reading and writing.",
+    "example": "If you can't spell, it may be because you have ___"
   }
   ]
 }
