@@ -1,52 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spelling Practice</title>
-
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="custom.css" rel="stylesheet">
-
-    <script type="text/javascript" src="vendor/jquery-2.1.4.js"></script>
-    <script type="text/javascript" src="vendor/moment.js"></script>
-    <script type="text/javascript" src="js/local_storage.js"></script>
-    <script type="text/javascript" src="js/spell.js"></script>
-    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta charset='utf-8'>
+      <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+        <meta content='width=device-width, initial-scale=1' name='viewport'>
+          <title>Spelling Practice</title>
+          <link href='vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
+            <link href='custom.css' rel='stylesheet'>
+              <script src='vendor/moment.js' type='text/javascript'></script>
+              <script src='vendor/jquery-2.1.4.js' type='text/javascript'></script>
+              <script src='js/local_storage.js' type='text/javascript'></script>
+              <script src='js/spell.js' type='text/javascript'></script>
+              <script src='vendor/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+              <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+              <![endif]-->
+            </link>
+          </link>
+        </meta>
+      </meta>
+    </meta>
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Spelling Exercise Utility</a>
-
+    <nav class='navbar navbar-default'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <a class='navbar-brand' href='#'>Spelling Exercise Utility</a>
         </div>
       </div>
     </nav>
-    <div class="container">
+    <div class='container'>
       <h1>Spelling Exercise Utility</h1>
       <p>Practice spelling with this web app. Make your own list or use the default.</p>
-      <p id="created_at"></p>
+      <p id='age'></p>
       <div id='question'>
-        <div class="alert" role="alert"></div>
+        <div class='alert' role='alert'></div>
         <h3>Hint</h3>
-        <center id="revealed"></center>
+        <center id='revealed'></center>
         <dl>
           <dt>Stat</dt>
-          <dd id="hint_stat"></dd>
+          <dd id='hint_stat'></dd>
           <dt>Definition</dt>
-          <dd id="hint_define"></dd>
+          <dd id='hint_define'></dd>
           <dt>Example</dt>
-          <dd id="hint_sentence"></dd>
+          <dd id='hint_sentence'></dd>
         </dl>
       </div>
       <div id='answer'>
-        <input id="input_answer" type="text" name="input" value="">
+        <input id='input_answer' name='input' type='text' value=''>
       </div>
     </div>
   </body>

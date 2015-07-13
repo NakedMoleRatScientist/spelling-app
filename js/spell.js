@@ -11,12 +11,13 @@
       console.log(status + error);
     });
     startUp = function(data) {
-      var comparison, today;
+      var comparison, days_ago, today;
       $("#question, #answer").show();
       this.storage = new LocalStorage();
       today = new Date();
-      comparison = today - this.storage.created_at;
-      $("#created_at").append(moment.duration(comparison).days());
+      comparison = today - Date.parse(this.storage.created_at);
+      days_ago = moment.duration(comparison).days();
+      $("#age").append("<b>Your account is about " + days_ago + " days old.</b>");
       this.current = "";
       this.fail = 0;
       this.reveal = "";
