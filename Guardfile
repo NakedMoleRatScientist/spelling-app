@@ -24,5 +24,5 @@
 # haml_options: { ugly: true }    pass options to the Haml engine
 
 guard :haml do
-  watch(/^.+(\.html\.haml)$/)
+  watch(/^.+(\.haml)$/)
 end
