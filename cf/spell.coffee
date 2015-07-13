@@ -17,7 +17,7 @@ $ ->
     today = new Date()
     comparison = today - Date.parse(@storage.created_at)
     days_ago = moment.duration(comparison).days()
-    $("#created_at").append(days_ago)
+    $("#age").append(days_ago)
     @current = ""
     @fail = 0
     @reveal = ""
