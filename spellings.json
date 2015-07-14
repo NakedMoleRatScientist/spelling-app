@@ -135,6 +135,11 @@
     "name": "Sentient",
     "definition": "adj. The ability or capability of a lifeform to experience or feel.",
     "example": "I am a ___ lifeform."
+  },
+  {
+    "name": "Conglomerate",
+    "definition": "Several distinct businesses combined into a single company",
+    "example": "Samsung is an example of a ___"
   }
   ]
 }
