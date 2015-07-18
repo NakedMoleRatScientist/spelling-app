@@ -1,55 +1,27 @@
-<!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset='utf-8'>
-      <meta content='IE=edge' http-equiv='X-UA-Compatible'>
-        <meta content='width=device-width, initial-scale=1' name='viewport'>
-          <title>Spelling Practice</title>
-          <link href='vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
-            <link href='custom.css' rel='stylesheet'>
-              <script src='vendor/moment.js' type='text/javascript'></script>
-              <script src='vendor/jquery-2.1.4.js' type='text/javascript'></script>
-              <script src='js/local_storage.js' type='text/javascript'></script>
-              <script src='js/spell.js' type='text/javascript'></script>
-              <script src='vendor/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
-              <!--[if lt IE 9]>
-                <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-                <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-              <![endif]-->
-            </link>
-          </link>
-        </meta>
-      </meta>
-    </meta>
-  </head>
-  <body>
-    <nav class='navbar navbar-default'>
-      <div class='container'>
-        <div class='navbar-header'>
-          <a class='navbar-brand' href='#'>Spelling Exercise Utility</a>
-        </div>
-      </div>
-    </nav>
-    <div class='container'>
-      <h1>Spelling Exercise Utility</h1>
-      <p>Practice spelling with this web app. Make your own list or use the default.</p>
-      <p id='age'></p>
-      <div id='question'>
-        <div class='alert' role='alert'></div>
-        <h3>Hint</h3>
-        <center id='revealed'></center>
-        <dl>
-          <dt>Stat</dt>
-          <dd id='hint_stat'></dd>
-          <dt>Definition</dt>
-          <dd id='hint_define'></dd>
-          <dt>Example</dt>
-          <dd id='hint_sentence'></dd>
-        </dl>
-      </div>
-      <div id='answer'>
-        <input id='input_answer' name='input' type='text' value=''>
-      </div>
-    </div>
-  </body>
-</html>
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+      %title
+        A Brand New nanoc Site - #{@item[:title]}
+      %link{:href => @items['/stylesheet/'].path, :rel => "stylesheet"}
+        / you don't need to keep this, but it's cool for stats!
+        %meta{:content => "nanoc #{Nanoc::VERSION}", :name => "generator"}
+  %body
+    #main
+      = yield
+    #sidebar
+      %h2 Documentation
+      %ul
+        %li
+          %a{:href => "http://nanoc.ws/docs/"} Documentation
+        %li
+          %a{:href => "http://nanoc.ws/docs/tutorial/"} Getting Started
+      %h2 Community
+      %ul
+        %li
+          %a{:href => "http://groups.google.com/group/nanoc/"} Discussion Group
+        %li
+          %a{:href => "irc://chat.freenode.net/#nanoc"} IRC Channel
+        %li
+          %a{:href => "http://github.com/nanoc/nanoc/wiki/"} Wiki
