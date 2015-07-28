@@ -1,0 +1,200 @@
+{
+
+"words":  [
+  {
+    "name": "Cheyenne",
+    "definition": "The mountain under which NORAD is located.",
+    "example": "___ is where the fictional SGC is located."
+  },
+  {
+    "name": "Appropriate",
+    "definition": "suitable, proper, just right",
+    "example": "One should use ___ force when engaging the enemy."
+  },
+  {
+    "name": "Obnoxious",
+    "definition": "nasty, disagreeable.",
+    "example": "That dude is such an ___ jackass."
+  },
+  {
+    "name": "Nocturnality",
+    "definition": "When an animal's primary activities take place during nighttime.",
+    "example": "The owl is known for its ___"
+  },
+  {
+    "name": "Manageable",
+    "definition": "adj. not too difficult or big to attempt.",
+    "example": "You should divide up your project into ___ chunks."
+  },
+  {
+    "name": "Dichotomy",
+    "definition": "noun. Two things represented as something the opposite or different from each other.",
+    "example": "You're setting up a false ___ where none exists."
+  },
+  {
+    "name": "Enthusiasm",
+    "definition": "noun. Enjoyment and interest in a given subject.",
+    "example": "My ___ for the game runs low."
+  },
+  {
+    "name": "Peculiar",
+    "definition": "adj. odd",
+    "example": "A ___ man came in town driving a clown car."
+  },
+  {
+    "name": "Explanation",
+    "definition": "noun. The reason the way or how something is",
+    "example": "The ___ for how car engines work is unclear."
+  },
+  {
+    "name": "Catastrophic",
+    "definition": "adj. extreme failure",
+    "example": "Even a tiny flaw in a rocket can result in a ___ event known as Rapid Unplanned Diassembly."
+  },
+  {
+    "name": "Laboratory",
+    "definition": "n. a facility designed for scientific and techological research.",
+    "example": "In Dexter's __, a child prodigy hid a ___ from his parents. "
+  },
+  {
+    "name": "Nitinol",
+    "definition": "n. an alloy of titanium and nickel.",
+    "example": "Four applications for the alloy ___ includes 'Superelasticity', 'work production', 'constrained recovery', and 'free recovery'."
+  },
+  {
+    "name": "Hygiene",
+    "definition": "n. health condition and set of practices for maintaining one's health.",
+    "example": "American high school started too early, reducing the overall sleep ___ of the population, and thus resulting in lower performance."
+  },
+  {
+    "name": "Suppressive fire",
+    "definition": "n. The concept of temporarily rendering an enemy ineffective with the use of weaponry so that they can be eliminated more easily.",
+    "example": "In ground warfare, most of weapon fire is geared toward ___ rather than outright taking out the target."
+  },
+  {
+    "name": "Substantially",
+    "definition": "adverb. In great amount, important, as opposed to minor or only slightly.",
+    "example": "In the last ten years, nobody had advanced spaceflight as ___ as SpaceX."
+  },
+  {
+    "name": "Preliminary",
+    "definition": "adjective. An initial action that prepare for something larger.",
+    "example": "A ___ investigation has been conducted, but revealed nothing yet. More investigation and time is needed."
+  },
+  {
+    "name": "Obsolescence",
+    "definition": "n. The eventual condition of becoming unwanted, useless, or unnecessary.",
+    "example": "Some people alleged that manufacturers conspire in a process called planned ___ to keep us buying new goods."
+  },
+  {
+    "name": "Logarithm",
+    "definition": "n. The power needed to raise a number exponentionally to produce a third number.",
+    "example": "The ___ of 100 is 2."
+  },
+  {
+    "name": "Intricacy",
+    "definition": "n. Highly detailed, complicated.",
+    "example": "If you dive deep enough into a subject, you will find that the ___ of the subject keeps getting deeper."
+  },
+  {
+    "name": "Pragmatic",
+    "definition": "adj. Realistic. Goal driven.",
+    "example": "The congresscritters these days are less hard-nosed and ___ these days, unwilling to compromise and more willing to stand up for their ideology."
+  },
+  {
+    "name": "Spurious",
+    "definition": "adj. Not actually true or fake.",
+    "example": "Those claims are ___ and false."
+  },
+  {
+    "name": "Plagiarize",
+    "definition": "verb. Taking someone's work and claiming it as one's own.",
+    "example": "To ___ is much worse than copying or pirating a work. Copying usually preserves attribution and is sometime outright benefical. ___ is to steal credits."
+  },
+  {
+    "name": "Architecture",
+    "definition": "n. The designs of buildings.",
+    "example": "The Sydney Opera House is a fine example of ___."
+  },
+  {
+    "name": "Dyslexia",
+    "definition": "n. A type of learning disorder associated with reading and writing.",
+    "example": "If you can't spell, it may be because you have ___"
+  },
+  {
+    "name": "Penchant",
+    "definition": "n. A fondness and habit to do something.",
+    "example": "That woman has a ___ for randomly baking cookies for someone."
+  },
+  {
+    "name": "Gladiatorial",
+    "definition": "adj. relating to mortal combat in the style of Romian blood sport.",
+    "example": "The battlebot TV series featured non-sentient ___ robots fighting to the death."
+  },
+  {
+    "name": "Sentient",
+    "definition": "adj. The ability or capability of a lifeform to experience or feel.",
+    "example": "I am a ___ lifeform."
+  },
+  {
+    "name": "Conglomerate",
+    "definition": "Several distinct businesses combined into a single company",
+    "example": "Samsung is an example of a ___"
+  },
+  {
+    "name": "Paradigm",
+    "definition": "n. A set of ideas and thought about something.",
+    "example": "The ___ of behavorism is outmoded in the field of psychology."
+  },
+  {
+    "name": "Nostalgic",
+    "definition": "adj. A feeling from long ago.",
+    "example": "Remember the Command and Conquer series, particularly Red Alert? I am getting ___ about it."
+  },
+  {
+    "name": "Reminiscing",
+    "definition": "verb. Remebering the good old time.",
+    "example": "___ about my high school days for old time's sake is counterproductive."
+  },
+  {
+    "name": "Cerebral",
+    "definition": "adj. Relating to using or requiring your intelligence.",
+    "example": "A lot of people think Interstellar is a ___ movie, but all it did was made me think about its plotholes."
+  },
+  {
+    "name": "Restaurant",
+    "definition": "noun. A place of business in which you purchase a meal and dine.",
+    "example": "Of all ___, buffets give you the most bang for your buck."
+  },
+  {
+    "name": "Ludicrous",
+    "definition": "adj. Completely unreasonable or ridiculous",
+    "example": "Activate ___ speed for faster than light travel!"
+  },
+  {
+    "name": "Coherent",
+    "definition": "adj. making sense.",
+    "example": "You do not have a coherent theory to explain how the government is behind the 9/11 terrorist attack."
+  },
+  {
+    "name": "Leviathan",
+    "definition": "noun. any large sea monster or creature.",
+    "example": "A whale could be considered a ___"
+  },
+  {
+    "name": "Arbitrary",
+    "definition": "adj. random and unpredictable, perhaps unrestrained.",
+    "example": "This rule is ___ as it lacks clear definition as to what is allowed and not allowed."
+  },
+  {
+    "name": "Copacetic",
+    "definition": "adj. Well, 100% ready, or simply OK.",
+    "example": "I am ___, thank you. Though I could just say I'm fine."
+  },
+  {
+    "name": "Arithmetic",
+    "definition": "noun. The oldest and the most basic branch of mathematics dealing with numbers.",
+    "example": "Adding an substracting numbers is part of the mathematical branch ___."
+  }
+  ]
+}

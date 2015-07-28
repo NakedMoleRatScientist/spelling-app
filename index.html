@@ -1,27 +1,46 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %meta{:charset => "utf-8"}
-      %title
-        A Brand New nanoc Site - #{@item[:title]}
-      %link{:href => @items['/stylesheet/'].path, :rel => "stylesheet"}
-        / you don't need to keep this, but it's cool for stats!
-        %meta{:content => "nanoc #{Nanoc::VERSION}", :name => "generator"}
-  %body
-    #main
-      = yield
-    #sidebar
-      %h2 Documentation
-      %ul
-        %li
-          %a{:href => "http://nanoc.ws/docs/"} Documentation
-        %li
-          %a{:href => "http://nanoc.ws/docs/tutorial/"} Getting Started
-      %h2 Community
-      %ul
-        %li
-          %a{:href => "http://groups.google.com/group/nanoc/"} Discussion Group
-        %li
-          %a{:href => "irc://chat.freenode.net/#nanoc"} IRC Channel
-        %li
-          %a{:href => "http://github.com/nanoc/nanoc/wiki/"} Wiki
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <title>Stuff</title>
+    <link href='vendor/css/bootstrap.min.css' rel='stylesheet'>
+    <script src='vendor/moment.js' type='text/javascript'></script>
+    <script src='vendor/jquery-2.1.4.js' type='text/javascript'></script>
+    <script src='vendor/bootstrap.min.js' type='text/javascript'></script>
+    <script src='local_storage.js' type='text/javascript'></script>
+    <script src='spell.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <nav class='navbar navbar-default'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <a class='navbar-brand' href='#'>Spelling Exercise Utility</a>
+        </div>
+      </div>
+    </nav>
+    <div class='container'>
+      <h1>Spelling Exercise Utility</h1>
+      <p>Practice spelling with this web app. Make your own list or use the default.</p>
+      <p id='listing'></p>
+      <p id='age'></p>
+      <div id='question'>
+        <div class='alert' role='alert'></div>
+        <h3>Hint</h3>
+        <center id='revealed'></center>
+      </div>
+      <dl>
+        <dt>Stat</dt>
+        <dd id='hint_stat'></dd>
+        <dt>Definition</dt>
+        <dd id='hint_define'></dd>
+        <dt>Example</dt>
+        <dd id='hint_sentence'></dd>
+      </dl>
+      <div id='answer'>
+        <input id='input_answer' name='input' type='text' value=''>
+      </div>
+    </div>
+  </body>
+</html>
