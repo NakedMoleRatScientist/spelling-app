@@ -174,7 +174,7 @@
   {
     "name": "Coherent",
     "definition": "adj. making sense.",
-    "example": "You do not have a coherent theory to explain how the government is behind the 9/11 terrorist attack."
+    "example": "You do not have a ___ theory to explain how the government is behind the 9/11 terrorist attack."
   },
   {
     "name": "Leviathan",
@@ -195,6 +195,16 @@
     "name": "Arithmetic",
     "definition": "noun. The oldest and the most basic branch of mathematics dealing with numbers.",
     "example": "Adding an substracting numbers is part of the mathematical branch ___."
+  },
+  {
+    "name": "Reticule",
+    "definition": "noun. Found in eyepieces, markings such as cross-hatches or grids that aid the user in measuring and aligning in an optical instrument.",
+    "example": "A sniper looks through his ___ to line up a fatal shot."
+  },
+  {
+    "name": "Pasteurization",
+    "definition": "noun. The process by which a food product becomes safer by heating.",
+    "example": "The process of ___ isn't intended to kill all pathogens, but rather to reduce their numbers."
   }
   ]
 }

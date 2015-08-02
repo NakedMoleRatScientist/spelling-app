@@ -1,17 +1,33 @@
 (function() {
   $(function() {
-    var emptyInput, randomLetter, random_question, splitter, startUp, update_keyHandler, update_question, words;
+    var emptyInput, randomLetter, random_question, spaced_display, startUp, update_keyHandler, update_question, words;
     $("#question, #answer").hide();
+    $("#finished").hide();
     words = $.getJSON("spellings.json");
     $.when(words).done((function(d) {
       return startUp(d);
     }));
-    splitter = function(string) {};
+    spaced_display = function(target) {
+      var i, len, letter, result, splitted;
+      splitted = target.split("");
+      result = "";
+      for (i = 0, len = splitted.length; i < len; i++) {
+        letter = splitted[i];
+        result = result.concat(letter + " ");
+      }
+      return result;
+    };
     $.when(words).fail(function(data, status, error) {
       console.log(status + error);
     });
     startUp = function(data) {
-      var comparison, days_ago, today;
+      var comparison, days_ago, i, ref, results, today;
+      this.order = (function() {
+        results = [];
+        for (var i = 0, ref = data['words'].length - 1; 0 <= ref ? i <= ref : i >= ref; 0 <= ref ? i++ : i--){ results.push(i); }
+        return results;
+      }).apply(this);
+      this.order = _.shuffle(this.order);
       $("#question, #answer").show();
       this.storage = new LocalStorage();
       today = new Date();
@@ -28,7 +44,11 @@
     };
     random_question = function(data) {
       var choice, i, j, ref, ref1, results, results1;
-      choice = Math.floor(Math.random() * data['words'].length);
+      if (this.order.size === 0) {
+        $("#question, #answer").hide();
+        return -1;
+      }
+      choice = this.order.pop();
       this.current = data['words'][choice]['name'];
       (function() {
         results = [];
@@ -47,6 +67,9 @@
     update_question = function(data) {
       var entry, i, last, len, size, word;
       entry = random_question(data);
+      if (entry === -1) {
+        return -1;
+      }
       update_keyHandler();
       words = entry.name.split(" ");
       size = 0;
@@ -59,7 +82,7 @@
       } else {
         last = "word";
       }
-      $("#revealed").empty().append(this.reveal);
+      $("#revealed").empty().append(spaced_display(this.reveal));
       $("dd#hint_stat").empty().append("This entry is <b>" + size + " letters</b> long and <b>" + words.length + " " + last + "</b> long.");
       $("dd#hint_define").empty().append(entry['definition']);
       return $("dd#hint_sentence").empty().append(entry['example']);
@@ -100,7 +123,7 @@
                 last = " time.";
               }
               randomLetter();
-              $("#revealed").empty().append(_this.reveal);
+              $("#revealed").empty().append(spaced_display(_this.reveal));
               $(".alert").empty().append("You have failed " + _this.fail + last);
               return emptyInput();
             }
