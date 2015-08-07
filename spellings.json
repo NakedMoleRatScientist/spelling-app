@@ -230,6 +230,11 @@
     "name": "Perseveration",
     "definition": "noun. The process of trying or repeating something, often in the face of difficulty.",
     "example": "___ is key to succeeding in many area of life, especially when the going gets tough."
+  },
+  {
+    "name": "Spaghetti",
+    "definition": "noun. Like noodles, but with pasta",
+    "example": "Code tend to devolves into a spaghetti mess if the programmer don't take care."
   }
   ]
 }
