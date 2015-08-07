@@ -153,7 +153,7 @@
   },
   {
     "name": "Reminiscing",
-    "definition": "verb. Remebering the good old time.",
+    "definition": "verb. Remembering the good old time.",
     "example": "___ about my high school days for old time's sake is counterproductive."
   },
   {
@@ -205,6 +205,31 @@
     "name": "Pasteurization",
     "definition": "noun. The process by which a food product becomes safer by heating.",
     "example": "The process of ___ isn't intended to kill all pathogens, but rather to reduce their numbers."
+  },
+  {
+    "name": "Caterpillar",
+    "definition": "noun. The larvae form of a butterfly or a moth",
+    "example": "The ___ will someday transforms into a butterfly or a moth."
+  },
+  {
+    "name": "Larva",
+    "definition": "noun. Juveniles which are distinct from adult stages before undergoing metamorphosis.",
+    "example": "The caterpillar is a ___ of a moth or butterfly."
+  },
+  {
+    "name": "Juvenile",
+    "definition": "noun. Young or immature version of an adult",
+    "example": "___ in human societies are prevented from exercising rights that adult possessed."
+  },
+  {
+    "name": "Epitome",
+    "definition": "noun. The perfect or defining example of something.",
+    "example": "Elon Musk is the ___ of hard work, luck, and perseveration in the face of great difficulty."
+  },
+  {
+    "name": "Perseveration",
+    "definition": "noun. The process of trying or repeating something, often in the face of difficulty.",
+    "example": "___ is key to succeeding in many area of life, especially when the going gets tough."
   }
   ]
 }

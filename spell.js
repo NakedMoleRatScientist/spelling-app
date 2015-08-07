@@ -44,11 +44,12 @@
     };
     random_question = function(data) {
       var choice, i, j, ref, ref1, results, results1;
-      if (this.order.size === 0) {
+      choice = this.order.pop();
+      if (this.order.length === 0) {
         $("#question, #answer").hide();
+        $("#finished").show();
         return -1;
       }
-      choice = this.order.pop();
       this.current = data['words'][choice]['name'];
       (function() {
         results = [];
